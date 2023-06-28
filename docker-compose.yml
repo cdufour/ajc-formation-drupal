@@ -1,0 +1,22 @@
+version: '3.1'
+services:
+
+  drupal:
+    image: drupal:9
+    ports:
+      - 8082:80
+    volumes:
+      - ~/your-folder-path/modules:/var/www/html/modules
+      - ~/your-folder-path/profiles:/var/www/html/profiles
+      - ~/your-folder-path/themes:/var/www/html/themes
+      - ~/your-folder-path/sites:/var/www/html/sites
+    restart: always
+
+  mysql:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: pass
+      MYSQL_USER: user
+      MYSQL_PASSWORD: pass
+      MYSQL_DATABASE: drupal
+    restart: always
