@@ -6,10 +6,8 @@ services:
     ports:
       - 8082:80
     volumes:
-      - ~/your-folder-path/modules:/var/www/html/modules
-      - ~/your-folder-path/profiles:/var/www/html/profiles
-      - ~/your-folder-path/themes:/var/www/html/themes
-      - ~/your-folder-path/sites:/var/www/html/sites
+      - /home/stagiaire/drupal/ajc-formation-drupal/themes:/var/www/html/themes
+      - /home/stagiaire/drupal/ajc-formation-drupal/modules:/var/www/html/modules
     restart: always
 
   mysql:

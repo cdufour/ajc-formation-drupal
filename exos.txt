@@ -1,0 +1,20 @@
+*** exos ***
+
+1.
+On souhaite pourvoir enregistrer des cours (formations) dans notre application Drupal.
+Les cours ont:
+- un intitué
+- une durée (en jours)
+- un niveau de difficulté (débutant, avancé)
+- un corps (descriptif).
+
+Créer un type de contenu "Course" avec les champs suivants:
+- duration (entier)
+- level (liste texte)
+- body
+
+Insérer les deux cours suivants
+- titre: Reactjs, durée: 3 jours, niveau: débutant, descriptif: "En cours de rédaction".
+- titre: Angular, durée: 2 jours, niveau: avancé, descriptif: "En cours de rédaction".
+
+Créer une vue affichant la liste des cours enregistrés avec l'url suivante: /formations
