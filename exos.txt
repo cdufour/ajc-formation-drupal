@@ -3,7 +3,7 @@
 1.
 On souhaite pourvoir enregistrer des cours (formations) dans notre application Drupal.
 Les cours ont:
-- un intitué
+- un intitulé
 - une durée (en jours)
 - un niveau de difficulté (débutant, avancé)
 - un corps (descriptif).
