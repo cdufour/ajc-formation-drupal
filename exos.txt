@@ -1,7 +1,7 @@
 *** exos ***
 
 1.
-On souhaite pourvoir enregistrer des cours (formations) dans notre application Drupal.
+On souhaite pouvoir enregistrer des cours (formations) dans notre application Drupal.
 Les cours ont:
 - un intitulé
 - une durée (en jours)
