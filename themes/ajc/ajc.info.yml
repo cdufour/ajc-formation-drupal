@@ -2,3 +2,14 @@ name: AJC
 type: theme
 base theme: false
 core_version_requirement: ^8 || ^9
+description: 'Theme de démo réalisé en formation Drupal'
+
+regions:
+  header: 'Header'
+  content: 'Content'
+  left_sidebar: 'Left Sidebar'
+  right_sidebar: 'Right Sidebar'
+  footer: 'Footer'
+
+libraries:
+  - ajc/global-styling

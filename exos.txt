@@ -18,3 +18,11 @@ Insérer les deux cours suivants
 - titre: Angular, durée: 2 jours, niveau: avancé, descriptif: "En cours de rédaction".
 
 Créer une vue affichant la liste des cours enregistrés avec l'url suivante: /formations
+
+
+2.
+- Afficher en ligne les liens du menu "Main Navigation"
+- Agir sur la taille de police des divs de repérage (html, page, etc.) afin de rendre compte de leur hiérarchie
+- Afficher le nom de la région (en petite taille) dans le div de repérage associé
+- Dans la région "footer", afficher le paragraphe suivant: "Site démo réalisé en formation"
+- Donner une couleur de fond #efefef à la balise article présente dans les nodes de type Course
