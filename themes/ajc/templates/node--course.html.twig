@@ -1,7 +1,20 @@
+{{ attach_library('core/drupal') }}
+{{ attach_library('core/jquery') }}
+{{ attach_library('ajc/demo') }}
+
+{% if active_theme() == 'ajc' %}
+<p>Le thème AJC est un thème d'apprentissage</p>
+{% endif %}
+
 <div>node--course.html.twig</div>
-<article>
+
+<div class="clock"></div>
+
+<article {{ attributes }} class="course-article">
     <h3>
         <a href="{{ url }}">{{ label }}</a>
     </h3>
     {{ content }}
 </article>
+
+<div class="clock"></div>

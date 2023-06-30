@@ -6,3 +6,9 @@ global-styling:
   js:
     js/script.js: {}
     js/test.js: {}
+
+demo:
+  version: 1.x
+  js:
+    js/demo.js: {}
+    js/clock.js: {}

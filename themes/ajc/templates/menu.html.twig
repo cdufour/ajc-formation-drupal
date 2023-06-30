@@ -1,0 +1,13 @@
+<div>menu.html.twig</div>
+{# <select>
+    {% for item in items %}
+    <option>{{ item.title }}</option>
+    {% endfor %}
+</select> #}
+<ul>
+    {% for item in items %}
+    <li>
+        <a href="{{ item.url }}">{{ item.title }}</a>
+    </li>
+    {% endfor %}
+</ul>

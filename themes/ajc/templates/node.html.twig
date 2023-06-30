@@ -1,8 +1,30 @@
-<div>node.html.twig</div>
+<div class="node-bg">node.html.twig</div>
 <article>
-    <h3>
-        <a href="{{ url }}">{{ label }}</a>
+    <h3 class="title">
+        {# <a href="{{ url }}">{{ label }}</a> #}
+        {{ label }}
     </h3>
     <p>Ecrit par <span>{{ author_name }}</span></p>
     {{ content }}
 </article>
+
+<script>
+// possible d'insérer un "inline script" dans le template
+// mais: mauvaise pratique
+console.log('node template');
+{# var title = document.getElementById("title");
+
+title.addEventListener('click', () => {
+    title.style.textDecoration = 'underline';
+}) #}
+
+var titles = document.getElementsByClassName("title");
+console.log(titles)
+
+for (var i=0; i<titles.length; i++) {
+    titles[i].addEventListener('click', (e) => {
+        e.target.style.textDecoration = 'underline';
+    })
+}
+
+</script>

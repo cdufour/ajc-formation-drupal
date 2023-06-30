@@ -11,5 +11,6 @@ regions:
   right_sidebar: 'Right Sidebar'
   footer: 'Footer'
 
+# the css/js files in the library become available to every page presented by the theme
 libraries:
   - ajc/global-styling
