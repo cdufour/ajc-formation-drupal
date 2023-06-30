@@ -12,3 +12,6 @@ demo:
   js:
     js/demo.js: {}
     js/clock.js: {}
+  dependencies: 
+    - core/drupal
+    - core/jquery

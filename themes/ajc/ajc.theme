@@ -1,0 +1,28 @@
+<?php
+
+function ajc_preprocess_page(&$variables) {
+
+    // la variable logged_in est un booléen valant true si l'utilisateur est authentifié
+    if ($variables['logged_in']) {
+        // ajout d'une nouvelle association clé/valeur dans le tableau $variables
+        $variables['job'] = 'Good job';
+    } else {
+        $variables['job'] = 'Poor job';
+    }
+}
+
+function ajc_preprocess_node(&$variables) {
+    $node_type = $variables['node']->getType();
+
+    // si le node est de (content-)type "course"
+    // on ajoute la classe "course-article" aux attributes
+    if ($node_type == 'course') {
+        $variables['attributes']['class'] = ['course-article', 'toto'];
+    }
+
+    // si l'utilisateur non authentifié on masque l'identité du
+    // créateur du contenu
+    if (!$variables['logged_in']) {
+        $variables['author_name'] = '*** secret ***';
+    }
+}

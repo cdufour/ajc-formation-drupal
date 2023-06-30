@@ -1,5 +1,12 @@
-{{ attach_library('core/drupal') }}
-{{ attach_library('core/jquery') }}
+{# 
+
+Il n'est pas nécessaire de charger ces dépendances
+si elles sont déjà spécifiées dans le fichier .libraries.yml
+
+{{ attach_library('core/drupal') }} 
+{{ attach_library('core/jquery') }} 
+
+#}
 {{ attach_library('ajc/demo') }}
 
 {% if active_theme() == 'ajc' %}
@@ -10,7 +17,11 @@
 
 <div class="clock"></div>
 
+{# 
+exo 2: la classe "course-article" est placée manuellement dans le template
 <article {{ attributes }} class="course-article">
+#}
+<article {{ attributes }}>
     <h3>
         <a href="{{ url }}">{{ label }}</a>
     </h3>
